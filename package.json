@@ -1,0 +1,15 @@
+{
+  "name": "docker-spa",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "live-server --entry-file=index.html",
+    "build": "rm -rf build && mkdir build && cp index.html build/index.html"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  },
+  "now": {
+    "type": "docker",
+    "alias": "docker-spa"
+  }
+}
